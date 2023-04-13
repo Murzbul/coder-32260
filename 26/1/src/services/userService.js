@@ -9,12 +9,12 @@ class UserService
 
   async create(payload)
   {
-      return await this.userDao.create(payload);
+      return this.userDao.create(payload);
   }
 
   async getOne(id)
   {
-      return await this.userDao.getOne(id);
+      return this.userDao.getOne(id);
   }
 }
 
